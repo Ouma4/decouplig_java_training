@@ -19,5 +19,9 @@ public class HumanPlayer implements Player {
     @Override
     public void respond(boolean lowerOrGreater) {
 
+        System.out.println("The number is inferior");
+        System.out.println("The number is superior");
+        System.out.println("Good job");
+
     }
 }

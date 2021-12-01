@@ -30,14 +30,14 @@ public class Simulation {
     private boolean nextRound() {
         //TODO implement me
         if (numberToGuess < player.askNextGuess()) {
-            System.out.println("The number is inferior");
+
             return false;
         }
         else if (numberToGuess > player.askNextGuess()){
-            System.out.println("The number is superior");
+
             return false;
         }else {
-            System.out.println("Good job");
+
             return true;
         }
     }
