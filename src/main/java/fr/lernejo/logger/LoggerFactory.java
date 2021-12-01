@@ -1,18 +1,12 @@
-package main.java.fr.lernejo.logger;
+package fr.lernejo.logger;
 
 public class LoggerFactory {
-     static void factory (String noun){
-         String monNom = noun;
 
+    public static Logger getLogger(String name) {
+        ConsoleLogger logger = new ConsoleLogger();
+        return logger;
     }
-
-   String getLogger(String name){
-        return name;
-    }
-    public static void main(String[] args) {
-        factory("Iam");
-        
-    }
-
-
 }
+
+
+
