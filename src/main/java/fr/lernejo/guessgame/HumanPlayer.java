@@ -19,9 +19,9 @@ public class HumanPlayer implements Player {
     @Override
     public void respond(boolean lowerOrGreater) {
         if(lowerOrGreater){
-            logger.log("The number is  inferior superior");
+            logger.log("plus grand");
         }else {
-            logger.log("The number is inferior");
+            logger.log("plus petit");
 
         }
     }
