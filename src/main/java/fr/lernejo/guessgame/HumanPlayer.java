@@ -13,15 +13,19 @@ public class HumanPlayer implements Player {
         System.out.println("Can you guess a number !");
         Scanner sc = new Scanner(System.in);
         long nub = sc.nextLong();
-        return 0;
+        return nub;
     }
 
     @Override
     public void respond(boolean lowerOrGreater) {
+        if(lowerOrGreater){
+            logger.log("The number is  inferior superior");
+        }else {
+            logger.log("The number is inferior");
 
-        System.out.println("The number is inferior");
-        System.out.println("The number is superior");
-        System.out.println("Good job");
-
+        }
     }
+
+
+
 }
